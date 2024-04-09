@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+#heroText{
+    background-color: #f07000;
+    border-right: #ffffff 8px solid;
+    border-bottom: #ffffff 8px solid;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-right: 590px;
+    padding: 30px;
+    padding-left: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hero-contact{
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+#hero-contact-p{
+
+    font: 20px/1.5 "Exo 2", sans-serif;
+    font-weight: 650;
+    color: #000000;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.heroDiv {
+    margin-bottom: 100px;
+    border: solid 2px #ff780100;
+    margin: 8px;
+    border-radius: 20px;
+    padding-top: 190px;
+    padding-bottom: 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.heroDiv video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -2;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.overlay {
+
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.301); /* Adjust the last value (0.5) to control the opacity of the overlay */
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* For small screens like mobile phones */
+@media only screen and (max-width: 767px) {
+    #heroText {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    #hero-contact-p {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .heroDiv {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+
+/* For tablets and small desktops */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #heroText {
+        margin-left: 30px;
+        margin-right: 200px;
+        padding: 25px;
+    }
+
+    #hero-contact-p {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .heroDiv {
+        padding-top: 150px;
+        padding-bottom: 120px;
+    }
+}
+
+/* For large desktops and high-resolution devices */
+@media only screen and (min-width: 992px) {
+    #heroText {
+        margin-left: 50px;
+        margin-right: 590px;
+        padding: 30px;
+        padding-left: 30px;
+    }
+
+    #hero-contact-p {
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .heroDiv {
+        padding-top: 190px;
+        padding-bottom: 150px;
+    }
+}

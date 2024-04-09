@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+  font-family: "Inknut Antiqua", serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+ font: 20px/1.5 "Exo 2", sans-serif;
+*/
+
+.h1-list{
+  font-family: "Inknut Antiqua", serif;
+}
+
+:root {
+  --surface-color: white;
+    --curve: 40;
+  }
+  
+.productcard-div {
+    box-sizing: border-box;
+    background-color: #000000;
+    margin-bottom: 150px;
+  }
+  
+  .cards {
+    border-radius: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 5vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    border: #ffffff solid 6px;
+    border-radius: 40px;
+    position: relative;
+    display: block;
+    height: 100%;  
+    overflow: hidden;
+    text-decoration: none;
+  }
+
+  .card:hover {
+    border: #ff7700 solid 6px;
+  }
+  
+  .card__image {   
+    background-color: #ffffff;   
+    width: 100%;
+    height: auto;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius: calc(var(40) * 1px);    
+    background-color: var(--surface-color);      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: var(--surface-color);
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .cardtitle {
+    font-family: "Inknut Antiqua", serif;
+    font-size: 1.4em;
+    font-weight: 780;
+    margin: 0 0 .3em;
+    color: #000000;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #000000; 
+  }
+  
+  .cardstatus {
+    font-size: 1em;
+    color: #000000;
+    font: 20px/1.5 "Exo 2", sans-serif;
+    font-weight: 600;
+  }
+  
+  .cardbtn {
+    font-family: "Exo 2", sans-serif;
+    margin: 20px;
+    text-align: center;
+    margin-right: 160px;
+    font-weight: 640;
+    background-color: #ff7700;
+    border-radius: 30px;
+    border-right: #000000 3px solid;
+    border-bottom: #000000 3px solid;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-left: 40px;
+  }    
+
+  .cardbtn:hover {
+    background-color: #000000;
+    border-right: #ff7700 3px solid;
+    border-bottom: #ff7700 3px solid;
+    color: #ffffff;
+  }    

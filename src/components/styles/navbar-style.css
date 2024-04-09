@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+  font-family: "Inknut Antiqua", serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+ font: 20px/1.5 "Exo 2", sans-serif;
+*/
+
+
+
+/* CSS RESET */
+Navigation{
+  box-sizing: border-box;
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+.logo {
+ height: 60px;
+ width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+.btn {
+  font-family: "Inknut Antiqua", serif;
+}
+
+/* CSS RESET ENDS */
+
+/* NAVIGATION BAR */
+
+nav {
+  margin: 3px;
+  border-radius: 30px;
+  border: 2.5px solid rgb(207, 207, 207);
+  display: flex;
+  background-color: #000000;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 1rem 4vw;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav:hover {
+  border: 2.5px solid rgb(255, 255, 255);
+}
+
+nav span {
+  color: #ff7701;
+}
+
+nav p {
+  font-size: 25px;
+  font-weight: 600;
+  cursor: default;
+}
+
+nav li {
+  font-family: "Inknut Antiqua", serif;
+  font-weight: 620;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  font-family: "Inknut Antiqua", serif;
+  color: #ffffff;
+  padding: 0 0.7rem;
+  transition: 0.1s ease-in-out;
+  font-size: 21px;
+  transition: all 0.25s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff7701;
+
+}
+
+
+
+#contact-btn {
+  font-family: "Inknut Antiqua", serif;
+background-color: #ff7701;
+color: #000000;
+border: 3px solid #ff7701;
+padding: 4px 20px;
+border-radius: 42px;
+margin-left: 9px;
+}
+
+#contact-btn:hover {
+  background-color: #000000;
+  color: #ff7701;
+  border: 3px solid #ff7701;
+}
+
+
+/* NAVIGATION BAR ENDS */
+
+
+/* MEDIA QUERIES - RESPONSIVE LAYOUT */
+
+/* DESKTOP - LAPTOP - TABLET */
+@media screen and (min-width: 850px){
+  nav .small-screens {
+    display: none;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 850px){
+  nav{
+    padding: 1rem 5vw;
+  }
+  
+  nav .small-screens i{
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  nav .big-screens {
+    display: none;
+  }
+}
+
+/* MEDIA QUERIES ENDS*/

@@ -1,0 +1,42 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+  font-family: "Inknut Antiqua", serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+ font-family:"Exo 2", sans-serif;
+*/
+
+.about-div {
+    margin: 70px 10px;
+    background-color: #a4a4a42b;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    padding: 90px;
+}
+
+.h1-about{
+    color: white;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 45px;
+    padding: 20px 190px;
+    color: #f07000;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.text-about{
+    font-family:"Exo 2", sans-serif;
+    font-size: 27px;
+    line-height: 32px;
+}
+
+.p-text{
+    padding-top: 20px;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+

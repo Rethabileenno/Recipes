@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+  font-family: "Inknut Antiqua", serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+ font: 20px/1.5 "Exo 2", sans-serif;
+*/
+
+
+.h1-list{
+ color: rgb(255, 255, 255);
+ text-align: center;
+ padding: 20px;
+ font-size: 50px;
+ padding-top: 120px;
+ font-weight: 700;
+}
+
+.p-list{
+    font-family:  "Exo 2", sans-serif;
+    color: #f07000;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+   }

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+  font-family: "Inknut Antiqua", serif;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+ font: 20px/1.5 "Exo 2", sans-serif;
+*/
+
+.newsletter-div{
+    color: black;
+    font-family: "Inknut Antiqua", serif;
+    background-color: #ffffff;
+    padding: 100px;
+    border-radius: 25px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border: 5px solid #ff7700;
+}
+
+.btn-newsletter{
+    background-color: #ff7700;
+    padding: 20px;
+    border-radius: 25px;
+    font-weight: 800;
+}
+
+.newsletter-h1{
+    color: #ff7700;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 850;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.newsletter-p{
+    color: #000000;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
